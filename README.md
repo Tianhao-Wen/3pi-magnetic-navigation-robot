@@ -20,12 +20,11 @@
 
 ## 🎬 Demo
 
-> Click the thumbnail below to watch the demo video ▶️
+> ▶️ Watch the autonomous retrieval demo below:
 
-[![Demo Video](./1.jpg)](https://github.com/ZexiLi429/NAO-LLM-HRI-Agent/raw/main/Robot Video.mp4)
+[**▶ Watch Robot Demo**](./assets/robot_demo.mp4)
 
-> Or [download demo.mp4 directly](./demo.mp4)
-
+**Best recorded run:** **11 successful magnetic-puck retrievals in 4 minutes with no human intervention after launch.**
 ---
 
 ## ✨ Key Features
