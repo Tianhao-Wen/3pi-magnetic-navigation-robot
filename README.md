@@ -22,7 +22,7 @@
 
 > Click the thumbnail below to watch the demo video ▶️
 
-[![Demo Video](./1.jpg)](https://github.com/ZexiLi429/NAO-LLM-HRI-Agent/raw/main/demo.mp4)
+[![Demo Video](./1.jpg)](https://github.com/ZexiLi429/NAO-LLM-HRI-Agent/raw/main/Robot Video.mp4)
 
 > Or [download demo.mp4 directly](./demo.mp4)
 
