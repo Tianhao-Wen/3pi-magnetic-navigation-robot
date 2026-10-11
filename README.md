@@ -186,39 +186,50 @@ puck_y = robot_y + 55 × sin(theta)
 
 ## 🎯 Geometry-Based Target Alignment
 
-Directly pushing a puck from the detection pose can send it away from the start zone.  
-Instead, the robot computes two intermediate points:
+Directly pushing the puck from the detection pose may move it away from the start zone.  
+The robot therefore computes two intermediate waypoints around the detected puck:
 
-- **M** — a lateral detour point beside the puck
-- **E** — a point behind the puck on the line from the start zone through the puck
+- **E (behind point)** — lies on the extension of the line from the start zone through the puck, farther away from the start.
+- **M (side point)** — lies perpendicular to the Start–Puck line at the puck, allowing the robot to move around the target without touching it.
 
 ```text
-                         M
-                         ●
-                        / \
-                       /   \
-              robot ●       ● E
-                         puck ●
-                              \
-                               \
-                                \
-                                 ● Start (0,0)
+                           M
+                           ●
+                           |
+                           | SAFE_RADIUS
+                           |
+Start (0,0) ● ----------- Puck ● ----------- ● E
+                   push direction to Start  behind point
 ```
 
-The sequence is:
+The actual side used for **M** depends on the robot's position relative to the Start–Puck line:
+
+```text
+                     M_left ●
+                            |
+                            |
+Start ● ------------------ Puck ● ------------------ ● E
+                            |
+                            |
+                    M_right ●
+```
+
+A 2D cross product determines whether `M_left` or `M_right` is selected.
+
+The alignment sequence is:
 
 ```text
 Detect puck
-   ↓
-Back off
-   ↓
+     ↓
+Back off 70 mm
+     ↓
 Move to M
-   ↓
+     ↓
 Move to E
-   ↓
-Face start zone
-   ↓
-Push puck toward origin
+     ↓
+Rotate to face Start
+     ↓
+Push puck toward Start
 ```
 
 The side used for the detour is selected from the sign of a 2D cross product, allowing the robot to approach from the side that avoids driving through the target.
