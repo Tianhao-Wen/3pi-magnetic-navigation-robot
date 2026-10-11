@@ -1,4 +1,3 @@
-[3Pi_README.md](https://github.com/user-attachments/files/33295129/3Pi_README.md)
 <div align="center">
 
 # 🤖 3Pi+ Autonomous Magnetic Puck Retrieval Robot
