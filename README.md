@@ -542,31 +542,12 @@ This modular structure makes it easier to isolate whether a failure is caused by
 
 ---
 
-## 🙏 Acknowledgements & Code Provenance
+## 🙏 Acknowledgements
 
-This project was developed as an individual robotics project at the **University of Bristol**.
-
-The repository contains project-specific autonomous control logic together with course support / starter components. In particular, comments in the supplied source identify support code such as the encoder interrupt implementation and OLED wrapper.
-
-The main project-specific behaviour is implemented in `3Pi_CodeStub.ino`, including:
-
-- startup magnetometer calibration;
-- waypoint search behaviour;
-- heading control;
-- magnetic target detection;
-- puck position estimation;
-- geometry-based target alignment;
-- hierarchical state-machine logic;
-- push-to-start behaviour;
-- repeated autonomous search cycles; and
-- four-minute autonomous stopping logic.
-
-> If publishing this repository publicly, verify that redistribution of any course-provided starter files is permitted by the relevant course / university policy.
+- University of Bristol.
 
 ---
 
-## 📜 Usage
+## 📜 License
 
-This repository is intended for **academic portfolio and educational reference**.
-
-Before adding an open-source license, confirm that any included course-provided support code may be redistributed under that license.
+For academic use only. Not for commercial deployment.
