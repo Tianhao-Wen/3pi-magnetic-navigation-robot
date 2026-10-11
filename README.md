@@ -19,17 +19,11 @@
 
 ## 🎬 Demo
 
-> Add a short demo GIF or video here when publishing the repository.
+> Click the thumbnail below to watch the autonomous robot demo ▶️
 
-<!--
-Example:
+[![3Pi+ Robot Demo](./assets/demo_thumbnail.png)](./assets/robot_demo.mp4?raw=1)
 
-[![Demo Video](./assets/demo_thumbnail.jpg)](./assets/robot_demo.mp4)
-
-or
-
-![3Pi+ Demo](./assets/demo.gif)
--->
+> [▶ Watch the full robot demo](./assets/robot_demo.mp4?raw=1)
 
 **Best recorded run:** **11 successful magnetic-puck retrievals in 4 minutes with no human intervention after launch.**
 
